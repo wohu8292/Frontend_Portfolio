@@ -1,0 +1,20 @@
+Font 가져오기
+    - index.css 파일에 @import
+    - tailwindconig.js 파일에서
+        extend: {
+            fontFamily: {
+                'customName': ["Edu AU VIC WA NT Dots", "cursive"]}
+                }
+
+TailwindCSS 자동완성: Plugin 다운
+
+Tailwind Scrollbar
+    - tailwindconfig 파일가서 import tailwindScrollBar from 'tailwind-scrollbar' >> plugin 에 집어넣음
+    - index.html 의 html 태그에서 class=""
+
+Npm hamburger
+
+Npm PropTypes
+    - npm install prop-types
+
+
