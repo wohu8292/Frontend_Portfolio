@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
+  const [navOpen, setNavOpen] = useState(true)
+
 
   return (
     <header className='fixed top-0 left-0 w-full h-20 flex items-center z-40 
@@ -16,13 +18,13 @@ const Header = () => {
           </h1>
 
         <div>
-          <div >
             <div className='md:hidden relative md:justify-self-center menu-btn'>
-              <Hamburger onClick={null} />
+              <Hamburger onClick={()=>setNavOpen((prev)=>!prev)}>
+                <span className='material-symbols-rounded'>{navOpen?'close': 'menu'}</span>
+              </Hamburger>
             </div>
-            <span className='material-symbols-rounded'>menu</span>
-          </div>
-          <Navbar />
+          
+          <Navbar navOpen={navOpen}/>
         </div>
 
           <a href="#contact" className='btn btn-secondary max-md:hidden md:justify-self-end'>Contact Me</a>

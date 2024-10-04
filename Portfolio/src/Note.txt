@@ -6,7 +6,6 @@ Font 가져오기
                 'customName': ["Edu AU VIC WA NT Dots", "cursive"]}
                 }
 
-TailwindCSS 자동완성: Plugin 다운
 
 Tailwind Scrollbar
     - tailwindconfig 파일가서 import tailwindScrollBar from 'tailwind-scrollbar' >> plugin 에 집어넣음
@@ -17,4 +16,53 @@ Npm hamburger
 Npm PropTypes
     - npm install prop-types
 
+@apply 
 
+________________________________
+
+TailwindCSS
+letter-spacing: tracking-wide
+line-height: leading-tight
+animate-: ping, bounce, pulse, spin
+currentTextColor: stroke-current
+hide: hidden, show:block
+
+________________________________
+
+optional chaining operator (?.)
+    - allows you to safely access deeply nested object properties 
+    - without having to explicitly check if each property in the chain exists. (no error throwing)
+
+nullish coalescing operator (??)
+    - let result = value1 ?? value2;        / if value1 is null, then value 2 will be returned
+
+useRef 에서
+current.style.width
+current.offsetWidth
+current.classList
+
+________________________________
+
+css
+1. intrinsic sizing: 글자수같은 내부요인 
+    - intrinsic 에는 max-content, min-content(가장 긴줄) 가 있음
+2. extrinsic sizing: 외부맥락 (overflow 가 생길수있음)
+
+@keyframes animationName{
+    from{
+        height:200px
+    }
+    40%{
+        height:300px
+    }
+    to{
+        height:500px    
+    }
+}
+
+width: 80ch             /80character
+aria-hidden='true'      /for accessibility    
+
+.btn:has(.material) vs .btn .material
+    - selects the .btn element itself, but only if it contains a descendant element with the class .material
+    - selects only the .material element that is a descendant of .btn
