@@ -26,6 +26,8 @@ line-height: leading-tight
 animate-: ping, bounce, pulse, spin
 currentTextColor: stroke-current
 hide: hidden, show:block
+aspect-square -video -auto
+
 
 ________________________________
 
@@ -66,3 +68,18 @@ aria-hidden='true'      /for accessibility
 .btn:has(.material) vs .btn .material
     - selects the .btn element itself, but only if it contains a descendant element with the class .material
     - selects only the .material element that is a descendant of .btn
+
+aspect-ratio: 1/1                   /width-to-height ratio of an element's box
+place-items: center stretch         /align-items + justify-items / 그냥 center 만적으면 둘다 center
+place-content: space-around center  /align-content + justify-content             
+flex-shrink: 0                      /shrink 가 사라짐 
+inset: 1rem 4rem 1rem 1rem          /top,left 와같은 positioning 쉽게해줌 /counterClock-wise
+________________________________
+
+html
+
+figure: <figure> tag specifies self-contained content, like illustrations, diagrams, photos, etc
+    <figure>
+        <img src="pic_trulli.jpg" alt="Trulli" style="width:70%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillCard from './SkillCard';
 
 const skillItem = [
     {
@@ -47,14 +48,20 @@ const Skills = () => {
   return (
     <section className='section'>
         <div className='container'>
-            <h2 headline-2>Essential Tools I use</h2>
-            <p className=''>Discover the powerful tools and technologies I use to create exceptional, 
+            <h2 className='headline-2'>Essential Tools I use</h2>
+            <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch]'>Discover the powerful tools and technologies I use to create exceptional, 
                 high-performing websites & applications.
             </p>
-            <div className=''>
-                {skillItem.map((object, index)=>{
-                    
-                })}
+            <div className='grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]'>
+                {skillItem.map((object, index)=>(
+                    <SkillCard
+                    key={index}
+                    imgSrc={object.imgSrc}
+                    label={object.label}
+                    desc={object.desc}
+                     />
+                ))
+              }
             </div>
 
         </div>
