@@ -79,7 +79,11 @@ ________________________________
 html
 
 figure: <figure> tag specifies self-contained content, like illustrations, diagrams, photos, etc
+loading: specifies whether a browser should load an image immediately or defer until the user scrolls near them.
     <figure>
-        <img src="pic_trulli.jpg" alt="Trulli" style="width:70%">
+        <img src="pic_trulli.jpg" alt="Trulli" style="width:70%" loading="lazy">
         <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
     </figure>
+
+<input required / autocomplete="given-name" or "family-name" / name="name">
+________________________________
