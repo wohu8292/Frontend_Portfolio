@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
-  const [navOpen, setNavOpen] = useState(true)
+  const [navOpen, setNavOpen] = useState(false)
 
 
   return (

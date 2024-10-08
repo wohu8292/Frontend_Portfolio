@@ -86,4 +86,13 @@ loading: specifies whether a browser should load an image immediately or defer u
     </figure>
 
 <input required / autocomplete="given-name" or "family-name" / name="name">
+
+&apos;         / HTML entity that represents the copyright symbol (')
+&copy;          / HTML entity that represents the copyright symbol (©)
 ________________________________
+
+lenis scroll
+1. npm install lenis
+2. import {ReactLenis} from "lenis/react"
+3. <ReactLenis root>...<ReactLenis/>
+4. import 'lenis/dist/lenis.css'
