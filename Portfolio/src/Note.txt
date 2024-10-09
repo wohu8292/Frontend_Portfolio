@@ -21,6 +21,9 @@ Npm PropTypes
 ________________________________
 
 TailwindCSS
+
+tailwindCSS 할때 꼭 vite 용 doc 으로 해야됨
+
 letter-spacing: tracking-wide
 line-height: leading-tight
 animate-: ping, bounce, pulse, spin

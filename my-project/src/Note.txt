@@ -1,0 +1,7 @@
+tailwindCSS
+
+border border-gray-300
+stroke-white                                /stroke color of an SVG
+
+<div className="group">
+    <h3 className="group-hover:text-white">
