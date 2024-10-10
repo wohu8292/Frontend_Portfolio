@@ -1,7 +1,82 @@
 tailwindCSS
 
-border border-gray-300
-stroke-white                                /stroke color of an SVG
+- border border-gray-300
+- stroke-white                                /stroke color of an SVG
 
-<div className="group">
+- <div className="group">
     <h3 className="group-hover:text-white">
+
+- CSS custom properties
+        1. extend:{
+            colors:{
+                name: "rgba(var(--border))"             /css file 에서 set {--border:38, 38, 38}
+        2. customName: "#3490dc"                        /text-customName
+        3. customName: {                                /text-customName-30
+            30: "#3490dc"
+            50: "#3860bd"}
+
+- drop-shadow-sm
+
+- cursor-pointer
+- hover: rotate-180
+- tailwindCSS size 0 - sm(minimum width: 640) - md - lg - xl
+
+- combination of hidden and group-hover:block is often used in Tailwind CSS to create interactive UI elements
+_________________________________________________
+common
+
+const element = document.documentElement
+_________________________________________________
+
+react 
+
+import React, { useState, useEffect } from 'react';
+
+function App() {
+  const [name, setName] = useState('');
+
+  // Load data from localStorage when the component mounts
+  useEffect(() => {
+    const storedName = localStorage.getItem('name');
+    if (storedName) {
+      setName(storedName);
+    }
+  }, []);
+
+  // Update localStorage when the name state changes
+  useEffect(() => {
+    if (name) {
+      localStorage.setItem('name', name);
+    }
+  }, [name]);
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter your name"
+      />
+      <p>Name in localStorage: {name}</p>
+    </div>
+  );
+}
+
+export default App;
+
+_________________________________________________
+
+css
+
+inline
+    - Margins and padding are applied only horizontally (left and right), not vertically (top and bottom)
+    - can't have width and height value
+
+block
+    - break the flow
+
+inline-block
+    - can set w and h like block
+    - can set padding and margin like block
+    - default size is content size like inline
