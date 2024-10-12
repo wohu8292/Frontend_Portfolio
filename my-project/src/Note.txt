@@ -20,12 +20,15 @@ tailwindCSS
 - cursor-pointer
 - hover: rotate-180
 - tailwindCSS size 0 - sm(minimum width: 640) - md - lg - xl
+- object-contain -fill -cover -none
 
 - combination of hidden and group-hover:block is often used in Tailwind CSS to create interactive UI elements
 _________________________________________________
 common
 
 const element = document.documentElement
+
+
 _________________________________________________
 
 react 
@@ -64,6 +67,11 @@ function App() {
 }
 
 export default App;
+
+- npm install slick-carousel      /sidescrollmenu
+- npm install slick               /see document
+- npm install aos --save          /animate on scroll library
+
 
 _________________________________________________
 

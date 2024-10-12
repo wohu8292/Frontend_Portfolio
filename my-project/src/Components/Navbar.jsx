@@ -23,12 +23,12 @@ const Menu = [
     link: "/#"
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#"
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#"
   },
@@ -75,7 +75,8 @@ const Navbar = () => {
               <input type="text" placeholder='search' 
               className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all 
               duration-300 rounded-full border border-gray-300 px-2 py-1 
-              focus:outline-none focus:border-primary focus:border-1"/>
+              focus:outline-none focus:border-primary focus:border-1 dark:border-gray-500
+              dark:bg-gray-800"/>
               <IoMdSearch className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3'/>
             </div>
 
