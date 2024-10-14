@@ -23,7 +23,7 @@ const Banner = () => {
                     winter sale upto 50% off
                   </h1>
                   <p  data-aos="fade-up" className='text-sm text-gray-500 tracking-wide leading-5'>
-                    paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, 
+                    paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph, paragraph 
                   </p>
                   <div className='flex flex-col gap-4'>
                     <div data-aos="fade-up" className='flex items-center gap-4'>
