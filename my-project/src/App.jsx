@@ -28,12 +28,16 @@ const App = () => {
     AOS.refresh()
   },[])
 
+  const handleOrderPopup=()=>{
+    setOrderPopup(!orderPopup)
+  }
+
   return (
   <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
     <Navbar handleOrderPopup={handleOrderPopup} />
-    <Hero />
+    <Hero handleOrderPopup={handleOrderPopup} />
     <Products />
-    <TopProducts />
+    <TopProducts handleOrderPopup={handleOrderPopup} />
     <Banner />
     <Subscribe />
     <Products />

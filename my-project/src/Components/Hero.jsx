@@ -37,7 +37,7 @@ const ImageList=[
     },
 ]
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
   return (
     <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-400 flex justify-center
     items-center dark:bg-gray-950 dark:text-white duration-200' style={{border:"1px solid gray"}}>
@@ -69,7 +69,9 @@ const Hero = () => {
                                 data-aos-duration="500"
                                 data-aos-delay="300"
                                 >
-                                    <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105
+                                    <button 
+                                    onClick={handleOrderPopup}
+                                    className='bg-gradient-to-r from-primary to-secondary hover:scale-105
                                     duration-200 text-white py-2 px-4 mt-4 rounded-full'>
                                         Order Now
                                     </button>
