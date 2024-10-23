@@ -69,8 +69,8 @@ const Navbar = ({handleOrderPopup}) => {
           </div>
 
           {/* searchBar and orderButton */}
-          {/* searchBar */}
           <div className='flex justify-between items-center gap-4 '>
+            {/* searchBar */}
             <div className='relative group hidden sm:block'>
               <input type="text" placeholder='search' 
               className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all 
@@ -84,7 +84,7 @@ const Navbar = ({handleOrderPopup}) => {
             <button onClick={()=> handleOrderPopup()} 
             className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 
             text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
-              <span className='group-hover:block hidden transition-all duration-200'>Order</span>
+              <span>Order</span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer"/>
             </button>
 
