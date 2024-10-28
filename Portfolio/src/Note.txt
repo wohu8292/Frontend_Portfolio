@@ -44,8 +44,10 @@ nullish coalescing operator (??)
 useRef 에서
 current.style.width
 current.offsetWidth
-current.classList
-
+current.classList.remove or .add
+event.target    .id .classname .tagName .   
+    -in the arrow function, it refer to whole global object
+    -in normal function, it refer to only this tag
 ________________________________
 
 css

@@ -1,4 +1,0 @@
--npx create-next-app@latest
--use ShadCN             
-    -UI component library built using Radix UI and Tailwind CSS
-    -will use: npx shadcn@2.1.0 add
