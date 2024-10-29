@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <div>
-            <section className='bg-red-500 md:px-28'>
+            <section className='bg-primary md:px-28'>
                 <div
                     className='flex flex-col items-center justify-between px-6 py-3 mx-auto space-y-12 md:flex-row md:space-y-0'>
                     <h2
@@ -17,21 +17,21 @@ const Footer = () => {
                     <div className='flex justify-center items-center'>
                         <Link
                             to="/Contact"
-                            className='p-1 px-6 pt-2 text-red-500 rounded-full bg-white shadow-2xl hover:bg-zinc-800 hover:text-blue-200'>Contact Me</Link>
+                            className='btn2'>Contact Me</Link>
                     </div>
                 </div>
             </section>
             <div className='bg-gray-900 md:px-28'>
                 <div>
-                    <div className='flex gap-11 py-3 justify-center'>
+                    <div className='flex gap-8 py-3 justify-end'>
                         <div>
                             <a href="">
-                                <FaGithub size={30} className='text-white hover:text-blue-200'/>
+                                <FaGithub size={30} className='text-white hover:text-blue-200 transition-all duration-300'/>
                             </a>
                         </div>
                         <div>
                             <a href="">
-                                <FaLinkedin size={30} className='text-white hover:text-blue-200'/>
+                                <FaLinkedin size={30} className='text-white hover:text-blue-200 transition-all duration-300'/>
                             </a>
                         </div>
                     </div>

@@ -5,9 +5,21 @@
 @tailwind utilities;
 
 .section{
-    @apply pt-12 pb-12 bg-primary/30
+    @apply pt-12 pb-12
+}
+
+.topSection{
+    @apply pt-44 pb-12
 }
 
 .container{
     @apply px-4 mx-auto lg:px-8 lg:max-w-6xl
+}
+
+.btn{
+    @apply transition-all duration-300 bg-blue-500 text-white font-bold font-cursive py-2 px-4 rounded-full inline-flex items-center text-sm cursor-pointer hover:bg-zinc-800 hover:text-blue-200
+}
+
+.btn2{
+    @apply p-1 px-6 transition-all duration-300 text-primary rounded-full bg-white shadow-2xl hover:bg-zinc-800 hover:text-blue-200 shadow-xl
 }

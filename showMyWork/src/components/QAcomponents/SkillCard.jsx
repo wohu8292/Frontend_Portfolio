@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const SkillCard = ({imgSrc,label,desc}) => {
   return (
-    <div data-aos="fade-up"  className="flex items-center gap-3 ring-2 ring-inset p-3 hover:bg-zinc-800  ring-zinc-50/10
+    <div data-aos="flip-right"  className="flex items-center gap-3 ring-2 ring-inset p-3 hover:bg-zinc-800  ring-zinc-50/10
     transition-all duration-300 hover:text-blue-200 rounded-xl">
       <div>
         {imgSrc}  

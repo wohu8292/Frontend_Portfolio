@@ -20,7 +20,7 @@ const Certification = () => {
       }, )
 
   return (
-    <section className='pt-44 pb-12 bg-primary/30'>
+    <section className='topSection'>
         <div className='container p-8 rounded-2xl grid lg:grid-cols-2 lg:gap-2 items-center justify-center'>
 
             {/* picture */}
@@ -33,9 +33,8 @@ const Certification = () => {
             {/* certification description */}
             <div>
                 <div className='hidden lg:block'>
-                    <p className='max-w-[29ch]'><strong>As a ISTQB certified QA engineer,</strong> I have understanding of</p>
-                    <br/>
-                    <ul className='leading-8 text-ce text-zinc-400'>
+                    <p className='font-bold mb-5'>As a ISTQB certified QA engineer, I have understanding of ...</p>
+                    <ul className='leading-7 text-sm'>
                         <li> Testing Principles</li>    
                         <li> Testing Process: STLC (Software Testing Life Cycle)</li>
                         <li> Test driven development vs Behavior driven Development</li>

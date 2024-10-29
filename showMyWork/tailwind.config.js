@@ -10,7 +10,7 @@ export default {
         "cursive":["Edu AU VIC WA NT Dots", "cursive"]
       },
       colors:{
-        primary: "#B9E3C6",
+        primary: "#FF6F61",
         secondary: "#ed8900" 
       },
       container:{
