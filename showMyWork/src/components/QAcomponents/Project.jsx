@@ -9,7 +9,7 @@ const Project = () => {
     <section className='section'>
         <div className="container">
             {/* header section */}
-            <div className='mb-3 font-bold'>My QA Projects</div>
+            <div className='mb-5 font-bold'>My QA Projects</div>
 
             {/* body section */}
             <div className='grid gap-x-8 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(200px,_1fr))]'>

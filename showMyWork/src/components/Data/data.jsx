@@ -60,7 +60,7 @@ const qaSkills = [
     },
     {
       imgSrc: <RiTailwindCssFill size={50} className="text-blue-500"/>,
-      label: 'Css',
+      label: 'Tailwind Css',
     },
     {
       imgSrc: <FaJs size={50} className="text-blue-500"/>,

@@ -38,7 +38,7 @@ const Hero = () => {
                             </a>
                         </div>
                         <div>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/woong-kyeol-huh-8b6981282/">
                                 <FaLinkedin
                                     size={30}
                                     className='text-black hover:text-blue-500 transition-all duration-300'/>

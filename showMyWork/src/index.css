@@ -13,7 +13,7 @@
 }
 
 .container{
-    @apply px-4 mx-auto lg:px-8 lg:max-w-6xl
+    @apply px-4 mx-auto lg:px-12 lg:max-w-6xl
 }
 
 .btn{
@@ -21,5 +21,9 @@
 }
 
 .btn2{
-    @apply p-1 px-6 transition-all duration-300 text-primary rounded-full bg-white shadow-2xl hover:bg-zinc-800 hover:text-blue-200 shadow-xl
+    @apply p-1 px-6 transition-all duration-300 text-primary rounded-full bg-white shadow-2xl hover:bg-zinc-800 hover:text-blue-200 border border-primary cursor-pointer
+}
+
+.form-input{
+    @apply border border-gray-300 text-gray-900 text-sm rounded w-full p-3 focus:ring-0 focus:border-gray-400 block
 }
