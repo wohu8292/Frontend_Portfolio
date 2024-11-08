@@ -15,6 +15,32 @@ import { SiCucumber } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 
+
+const menuList = [
+  {
+      id: 1,
+      name: "Home",
+      link: "/",
+      classname: "active"
+  }, {
+      id: 2,
+      name: "Web Portfolio",
+      link: "/WebPortfolio"
+  }, {
+      id: 3,
+      name: "QA Portfolio",
+      link: "/QaPortfolio"
+  }, {
+      id: 4,
+      name: "Contact",
+      link: "/Contact"
+  }, {
+      id: 5,
+      name: "Projects",
+      link: "/#"
+  }
+]
+
 const qaSkills = [
     {
       imgSrc: <SiPlaywright size={50} className="text-blue-500"/>,
@@ -135,4 +161,4 @@ const qaProjectData = [
 ]
 
 
-export {webProjectData, qaProjectData, qaSkills, webSkills}
+export {webProjectData, qaProjectData, qaSkills, webSkills, menuList}

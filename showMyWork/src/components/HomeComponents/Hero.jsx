@@ -31,14 +31,14 @@ const Hero = () => {
                     </div>
                     <div className='flex gap-3 pt-8'>
                         <div>
-                            <a href="">
+                            <a href="https://github.com/wohu8292" target='_blank'>
                                 <FaGithub
                                     size={30}
                                     className='text-black hover:text-blue-500 transition-all duration-300'/>
                             </a>
                         </div>
                         <div>
-                            <a href="https://www.linkedin.com/in/woong-kyeol-huh-8b6981282/">
+                            <a href="https://www.linkedin.com/in/woong-kyeol-huh-8b6981282/" target='_blank'>
                                 <FaLinkedin
                                     size={30}
                                     className='text-black hover:text-blue-500 transition-all duration-300'/>

@@ -7,32 +7,11 @@ import QaPortfolio from './QaPortfolio'
 import WebPortfolio from './WebPortfolio'
 import Contact from '../Contact';
 
+import { menuList } from './Data/data';
+
 import {Routes, Route, Link} from 'react-router-dom';
 
-const Menu = [
-    {
-        id: 1,
-        name: "Home",
-        link: "/",
-        classname: "active"
-    }, {
-        id: 2,
-        name: "Web Portfolio",
-        link: "/WebPortfolio"
-    }, {
-        id: 3,
-        name: "QA Portfolio",
-        link: "/QaPortfolio"
-    }, {
-        id: 4,
-        name: "Contact",
-        link: "/Contact"
-    }, {
-        id: 5,
-        name: "Projects",
-        link: "/#"
-    }
-]
+
 
 const NavBar = () => {
     return (
@@ -71,7 +50,7 @@ const NavBar = () => {
                 <div>
                     <ul className='bg-primary/40 flex items-center justify-evenly gap-5 py-1'>
                         {
-                            Menu.map((element) => (
+                            menuList.map((element) => (
                                 <Link
                                     to={element.link}
                                     key={element.id}
